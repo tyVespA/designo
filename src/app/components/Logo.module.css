@@ -1,0 +1,7 @@
+.logoContainer {
+  display: flex;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 35px;
+}
