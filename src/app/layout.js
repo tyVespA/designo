@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${jost.variable}`}>
+      <body className={`${jost.variable} max-width`}>
         <Header />
         {children}
       </body>
