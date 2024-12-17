@@ -1,0 +1,37 @@
+.hero {
+  background-color: var(--primary-accent);
+  border-radius: var(--border-radius);
+  color: var(--primary-light);
+  padding-left: 95px;
+  padding-block: 145px;
+
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.hero h1 {
+  max-width: 620px;
+  padding-bottom: 30px;
+}
+
+.hero p {
+  max-width: 450px;
+  padding-bottom: 40px;
+}
+
+.phoneMockup {
+  position: absolute;
+  right: -50px;
+  bottom: -250px;
+}
+
+.bgPattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -5;
+}

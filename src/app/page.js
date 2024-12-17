@@ -1,24 +1,39 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Button from "./components/Button";
+
+import bg_pattern_hero_desktop from "../../public/home/desktop/bg-pattern-hero-home.svg";
+import image_hero_phone_desktop from "../../public/home/desktop/image-hero-phone.png";
 
 export default function Home() {
   return (
-    <div>
-      <h1>test h1</h1>
-      <h1>The quick brown fox jumps over the lazy dog</h1>
-      <h2>test h2</h2>
-      <h2>The quick brown fox jumps over the lazy dog</h2>
-      <h3>test h3</h3>
-      <h3>The quick brown fox jumps over the lazy dog</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
-        hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
-        vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
-        laoreet viverra, tortor libero sodales leo
-      </p>
-      <button>test</button>
-
-      <p>add image + link to test routing + deploy</p>
-    </div>
+    <>
+      <section className={styles.hero}>
+        <div>
+          <h1>
+            Design su misura pluripremiati e soluzioni di branding digitale
+          </h1>
+          <p>
+            Con oltre 10 anni di esperienza nel settore, siamo esperti nella
+            creazione di siti web completamente responsive, design di app e
+            brand experience coinvolgenti. Scopri di più sui nostri servizi.
+          </p>
+          <Button theme="light">Scopri di più</Button>
+        </div>
+        <div>
+          <Image
+            src={image_hero_phone_desktop}
+            alt="cellulare"
+            className={styles.phoneMockup}
+          />
+          <Image
+            src={bg_pattern_hero_desktop}
+            alt=""
+            aria-hidden
+            className={styles.bgPattern}
+          />
+        </div>
+      </section>
+    </>
   );
 }
