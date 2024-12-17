@@ -14,3 +14,26 @@
   font-size: 14;
   letter-spacing: 2px;
 }
+
+.header li {
+  position: relative;
+  text-decoration: none;
+}
+
+.header li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--secondary-dark);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s;
+}
+
+.header li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

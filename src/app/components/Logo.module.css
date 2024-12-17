@@ -5,3 +5,11 @@
   align-items: center;
   gap: 35px;
 }
+
+.oval {
+  transition: transform 0.25s;
+}
+
+.logoContainer:hover .oval {
+  transform: rotate(90deg);
+}

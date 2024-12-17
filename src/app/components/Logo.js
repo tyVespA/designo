@@ -8,7 +8,7 @@ import oval from "../../../public/oval.png";
 export default function Logo() {
   return (
     <Link href="/" className={styles.logoContainer}>
-      <Image src={oval} alt="logo" height={50} />
+      <Image src={oval} alt="logo" height={50} className={styles.oval} />
       <Image
         src={designo_dark}
         alt="logo"
