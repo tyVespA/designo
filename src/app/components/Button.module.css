@@ -1,0 +1,23 @@
+.button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  /* transition: background-color 0.3s, color 0.25s; */
+  transition: all 0.25s;
+}
+
+.button:hover {
+  background-color: var(--secondary-accent);
+  color: var(--primary-light);
+}
+
+.light {
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.dark {
+  background-color: var(--primary-accent);
+  color: var(--primary-light);
+}
