@@ -1,17 +1,20 @@
 import Link from "next/link";
-import Image from "next/image";
-
-import logo from "../../../public/favicon-32x32.png";
+import styles from "./Header.module.css";
+import Logo from "./Logo";
 
 export default function Header() {
   return (
-    <header>
-      <Link href="/">
-        <Image src={logo} alt="logo" />
-      </Link>
+    <header className={`${styles.header} max-width`}>
+      <Logo />
       <ul>
         <li>
-          <Link href="/about">about</Link>
+          <Link href="/about">Chi siamo</Link>
+        </li>
+        <li>
+          <Link href="/about">Dove siamo</Link>
+        </li>
+        <li>
+          <Link href="/about">Contatti</Link>
         </li>
       </ul>
     </header>

@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 65px;
+}
+
+.header ul {
+  padding-left: 0;
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 14;
+  letter-spacing: 2px;
+}
