@@ -78,3 +78,28 @@ body {
   font-family: var(--font-jost);
   background-color: var(--primary-accent);
 }
+
+h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 26px;
+}
