@@ -2,7 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--primary-light);
   padding-block: 65px;
+
+  position: relative;
+  z-index: 100;
 }
 
 .header ul {
@@ -36,4 +40,50 @@
 .header li:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.icon_hamburger,
+.icon_close {
+  display: none;
+}
+
+@media screen and (max-width: 660px) {
+  .header {
+    padding-block: 35px;
+  }
+
+  .header nav {
+    position: absolute;
+
+    z-index: 1;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    transition: all 0.25s;
+  }
+
+  .slided_out {
+    top: 94px;
+    right: -400px;
+    left: 800px;
+  }
+
+  .slided_in {
+    top: 94px;
+    left: -40px;
+    right: -40px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+    padding-block: 48px;
+  }
+
+  .display_none {
+    display: none;
+  }
+
+  .display_block {
+    display: block;
+  }
 }
