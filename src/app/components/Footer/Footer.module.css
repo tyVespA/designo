@@ -82,11 +82,17 @@
   justify-content: space-between;
 }
 
-.bottom .text {
+.text,
+.socialsContainer {
+  flex: 1;
+}
+
+.text {
   opacity: 50%;
   font-weight: 500;
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .text400 {
@@ -95,6 +101,7 @@
 
 .socialsContainer {
   display: flex;
+  justify-content: flex-end;
   gap: 16px;
   margin-top: auto;
 }

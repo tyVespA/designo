@@ -7,10 +7,21 @@
   padding-block: 72px;
   padding-inline: 96px;
   border-radius: var(--border-radius);
+  overflow: hidden;
+  z-index: 10;
+}
 
+.footerBanner {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.bgContainer {
+  position: absolute;
+  right: -96px;
+  z-index: -1;
 }
 
 .text,
