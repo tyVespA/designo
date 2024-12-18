@@ -1,6 +1,7 @@
 import { Jost } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer/Footer";
 
 const jost = Jost({
   variable: "--font-jost",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={`${jost.variable} max-width`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
