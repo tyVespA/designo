@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import styles from "./Header.module.css";
 import Logo from "./Logo";
+import designo_dark from "../../../public/designo-dark.svg";
 import icon_hamburger from "../../../public/shared/mobile/icon-hamburger.svg";
 import icon_close from "../../../public/shared/mobile/icon-close.svg";
 
@@ -16,7 +17,7 @@ export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <header className={`${styles.header}`}>
-      <Logo />
+      <Logo src={designo_dark} />
       <nav className={openMenu ? styles.slided_in : styles.slided_out}>
         <ul>
           <li onClick={() => setOpenMenu(false)}>
