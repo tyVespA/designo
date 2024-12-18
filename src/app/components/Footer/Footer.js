@@ -7,9 +7,15 @@ import designo_light from "../../../../public/designo-light.svg";
 
 // add prop with default value of yes, when its no: hide banner
 
-export default function Footer() {
+export default function Footer({ showBanner = "yes" }) {
+  // custom values depending if banner is showing or not
+  const marginTopValue = showBanner === "yes" ? "360px" : "160px";
+  const paddingTopValue = showBanner === "yes" ? "144px" : "72px";
   return (
-    <div className={styles.footerContainer}>
+    <div
+      className={styles.footerContainer}
+      style={{ marginTop: marginTopValue, paddingTop: paddingTopValue }}
+    >
       <footer className="max-width">
         <div className={styles.top}>
           <div className={styles.logoContainer}>
@@ -85,7 +91,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <FooterBanner />
+        {showBanner === "yes" && <FooterBanner />}
       </footer>
     </div>
   );
