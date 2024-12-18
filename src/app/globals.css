@@ -79,7 +79,7 @@ h6 {
 body {
   font-family: var(--font-jost);
   color: var(--secondary-dark);
-  /* background-color: var(--primary-accent); */
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -127,4 +127,11 @@ button {
 .max-width {
   max-width: 1111px;
   margin-inline: auto;
+  /* padding-inline: 40px; */
+}
+
+@media screen and (max-width: 1190px) {
+  .max-width {
+    padding-inline: 40px;
+  }
 }
