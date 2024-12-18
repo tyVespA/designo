@@ -9,8 +9,10 @@
   grid-template-columns: 1.3fr 1fr;
   align-items: center;
   position: relative;
-  z-index: 100;
+  z-index: 10;
   overflow: hidden;
+
+  margin-bottom: 160px;
 }
 
 .hero h1 {
@@ -29,9 +31,37 @@
   bottom: -250px;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(25px);
+  }
+}
+
 .bgPattern {
   position: absolute;
   top: 0;
   right: 0;
   z-index: -5;
+  animation: float 15s ease-in-out infinite;
+}
+
+/* LINK CARDS SECTION */
+
+.linksCardsSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 308px 308px;
+  gap: 25px;
+
+  margin-bottom: 160px;
+}
+
+.item1 {
+  grid-row: 1/3;
 }

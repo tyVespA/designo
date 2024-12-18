@@ -3,13 +3,13 @@
   max-width: 100%;
   justify-content: flex-start;
   align-items: center;
-  gap: 35px;
+  gap: 15px;
 }
 
 .oval {
-  transition: transform 0.25s;
+  transition: transform 0.25s ease-out;
 }
 
 .logoContainer:hover .oval {
-  transform: rotate(90deg);
+  transform: rotate(360deg);
 }
