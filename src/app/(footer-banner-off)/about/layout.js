@@ -1,7 +1,7 @@
 import { Jost } from "next/font/google";
-import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer/Footer";
+import "../../globals.css";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer/Footer";
 
 const jost = Jost({
   variable: "--font-jost",
@@ -13,13 +13,13 @@ export const metadata = {
   description: "Award-winning custom designs and digital branding solutions",
 };
 
-export default function RootLayout({ children }) {
+export default function FooterBannerOffLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${jost.variable} max-width`}>
         <Header />
         {children}
-        <Footer />
+        <Footer showBanner="no" />
       </body>
     </html>
   );
