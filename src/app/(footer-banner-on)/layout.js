@@ -12,10 +12,17 @@ const jost = Jost({
   subsets: ["latin"],
 });
 
+// export const viewport = {
+//   initialScale: 1,
+//   width: "device-width",
+// };
+
 export const metadata = {
   title: "Designo",
   description: "Award-winning custom designs and digital branding solutions",
 };
+
+export const viewport = "width=device-width, initial-scale=1.0";
 
 export default function RootLayout({ children }) {
   return (
