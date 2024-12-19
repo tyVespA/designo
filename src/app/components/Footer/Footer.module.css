@@ -7,11 +7,6 @@
   z-index: 1;
   left: 0;
 
-  /* have to change margin in about page */
-  /* add prop? */
-  /* margin-top: 360px;
-  padding-top: 144px; */
-
   padding-bottom: 72px;
 }
 
@@ -31,6 +26,7 @@
 /* Decorative separator */
 .logoContainer {
   position: relative;
+  overflow-x: hidden;
 }
 
 .logoContainer::after {
