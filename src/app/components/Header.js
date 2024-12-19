@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { useEffect } from "react";
 import styles from "./Header.module.css";
 import Logo from "./Logo";
 import designo_dark from "../../../public/designo-dark.svg";
@@ -11,12 +12,25 @@ import icon_close from "../../../public/shared/mobile/icon-close.svg";
 
 // TODO:
 // add dark backdrop when menu open
-// lock scrolling when menu open
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
+
+  useEffect(() => {
+    if (openMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [openMenu]);
+
   return (
     <header className={`${styles.header}`}>
+      <div
+        className={`${styles.backdrop} ${
+          openMenu ? styles.backdrop_slidedIn : styles.backdrop_slidedOut
+        }`}
+      ></div>
       <Logo src={designo_dark} />
       <nav className={openMenu ? styles.slided_in : styles.slided_out}>
         <ul>

@@ -9,6 +9,28 @@
   z-index: 100;
 }
 
+.backdrop {
+  position: absolute;
+  transition: all 0.25s;
+}
+
+.backdrop_slidedIn {
+  height: 100vh;
+  z-index: -1;
+  top: 94px;
+  right: -40px;
+  bottom: 0;
+  left: -40px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop_slidedOut {
+  top: 94px;
+  right: -400px;
+  left: 800px;
+}
+
 .header ul {
   padding-left: 0;
   display: flex;
