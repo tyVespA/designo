@@ -29,6 +29,9 @@
   position: absolute;
   right: -50px;
   bottom: -250px;
+  max-width: 624px;
+  width: 100%;
+  height: auto;
 }
 
 @keyframes float {
@@ -49,6 +52,73 @@
   right: 0;
   z-index: -5;
   animation: float 15s ease-in-out infinite;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1105px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding-block: 60px;
+    padding-left: 0;
+    text-align: center;
+    align-items: center;
+
+    min-height: 840px;
+  }
+
+  .hero p {
+    margin-inline: auto;
+  }
+
+  .phoneMockup {
+    top: 300px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .hero .bgPattern {
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .hero {
+    min-height: 740px;
+  }
+
+  .text {
+    padding-inline: 24px;
+  }
+
+  .phoneMockup {
+    top: 225px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .hero {
+    min-height: 740px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .phoneMockup {
+    top: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .phoneMockup {
+    top: 350px;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  .phoneMockup {
+    top: 400px;
+  }
 }
 
 /* LINK CARDS SECTION */
@@ -56,6 +126,8 @@
 .linksCardsSection {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  /* change in media queries */
   grid-template-rows: 308px 308px;
   gap: 25px;
 

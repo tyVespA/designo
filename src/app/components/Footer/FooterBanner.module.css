@@ -9,6 +9,8 @@
   border-radius: var(--border-radius);
   overflow: hidden;
   z-index: 10;
+  /* check for tablet/mobile */
+  margin-inline: 30px;
 }
 
 .footerBanner {
