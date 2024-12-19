@@ -18,9 +18,9 @@ export default function Header() {
 
   useEffect(() => {
     if (openMenu) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflowY = "hidden";
     } else {
-      document.body.style.overflow = "";
+      document.body.style.overflowY = "";
     }
   }, [openMenu]);
 

@@ -146,3 +146,9 @@ button {
     padding-inline: 40px;
   }
 }
+
+@media screen and (max-width: 660px) {
+  body {
+    padding-top: 94px;
+  }
+}
