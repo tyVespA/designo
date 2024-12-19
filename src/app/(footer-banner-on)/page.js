@@ -10,8 +10,14 @@ import bg_pattern_hero_desktop from "../../../public/home/desktop/bg-pattern-her
 import image_hero_phone_desktop from "../../../public/home/desktop/image-hero-phone.png";
 // link cards section
 import image_web_design_desktop from "../../../public/home/desktop/image-web-design-large.jpg";
+import image_web_design_tablet from "../../../public/home/tablet/image-web-design.jpg";
+import image_web_design_mobile from "../../../public/home/mobile/image-web-design.jpg";
 import image_app_design_desktop from "../../../public/home/desktop/image-app-design.jpg";
+import image_app_design_tablet from "../../../public/home/tablet/image-app-design.jpg";
+import image_app_design_mobile from "../../../public/home/mobile/image-app-design.jpg";
 import image_graphic_design_desktop from "../../../public/home/desktop/image-graphic-design.jpg";
+import image_graphic_design_tablet from "../../../public/home/tablet/image-graphic-design.jpg";
+import image_graphic_design_mobile from "../../../public/home/mobile/image-graphic-design.jpg";
 // features section
 import illustration_passionate from "../../../public/home/desktop/illustration-passionate.svg";
 import illustration_resourceful from "../../../public/home/desktop/illustration-resourceful.svg";
@@ -21,7 +27,7 @@ export default function Home() {
   return (
     <>
       <section className={styles.hero}>
-        <div>
+        <div className={styles.text}>
           <h1>
             Design su misura pluripremiati e soluzioni di branding digitale
           </h1>
@@ -46,6 +52,8 @@ export default function Home() {
           />
         </div>
       </section>
+
+      {/* use picture inside component to change images (?) */}
 
       <section className={styles.linksCardsSection}>
         <div className={styles.item1}>

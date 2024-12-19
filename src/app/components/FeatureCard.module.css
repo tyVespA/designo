@@ -12,3 +12,22 @@
 .featureCardContainer h3 {
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 980px) {
+  .featureCardContainer {
+    flex-direction: row;
+    gap: 45px;
+    text-align: start;
+  }
+
+  .featureCardContainer img {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .featureCardContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
