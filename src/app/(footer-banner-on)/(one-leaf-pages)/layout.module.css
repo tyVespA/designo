@@ -1,0 +1,8 @@
+.bg_pattern_leaf {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  z-index: -1;
+}
+
+/* add queries to remove bgs in smaller screens */
