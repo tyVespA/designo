@@ -22,8 +22,6 @@ export const metadata = {
   description: "Award-winning custom designs and digital branding solutions",
 };
 
-export const viewport = "width=device-width, initial-scale=1.0";
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

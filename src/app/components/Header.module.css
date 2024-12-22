@@ -8,9 +8,6 @@
 
   position: relative;
   z-index: 100;
-
-  /* this breaks menu */
-  /* overflow-x: hidden; */
 }
 
 .backdrop {

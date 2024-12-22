@@ -25,6 +25,10 @@
   padding-bottom: 40px;
 }
 
+.imagesContainer {
+  width: 100%;
+}
+
 .phoneMockup {
   position: absolute;
   right: -50px;
@@ -52,7 +56,7 @@
   right: 0;
   z-index: -5;
   animation: float 15s ease-in-out infinite;
-  width: 100%;
+  /* width: 100%; */
   height: auto;
 }
 
@@ -76,6 +80,10 @@
     top: 300px;
     right: 50%;
     transform: translateX(50%);
+  }
+
+  .bgPattern {
+    width: 100%;
   }
 
   .hero .bgPattern {

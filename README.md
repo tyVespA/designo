@@ -39,3 +39,10 @@ learned:
 routing
 multiple layouts
 conditional styles
+
+todo:
+remove leafs in mobiles
+change images in linksCardsSection using picture
+fix sections bottom-margins on mobiles
+links card section should be its own component
+footer logo bugged (?)

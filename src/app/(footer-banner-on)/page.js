@@ -38,7 +38,7 @@ export default function Home() {
           </p>
           <Button theme="light">Scopri di più</Button>
         </div>
-        <div>
+        <div className={styles.imagesContainer}>
           <Image
             src={image_hero_phone_desktop}
             alt="cellulare"
