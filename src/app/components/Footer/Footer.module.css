@@ -24,20 +24,19 @@
 }
 
 /* Decorative separator */
-.logoContainer {
+.top {
   position: relative;
-  overflow-x: hidden;
 }
 
-.logoContainer::after {
+.top::after {
   content: "";
   position: absolute;
   bottom: -40px;
   height: 1px;
-  width: 100vw;
-  max-width: 1111px;
+  width: 100%;
   margin-inline: auto;
   background-color: var(--secondary-dark);
+  z-index: 100;
 }
 
 .footerContainer ul {
@@ -91,6 +90,11 @@
   gap: 20px;
 }
 
+.text1,
+.text2 {
+  min-width: 184px;
+}
+
 .text400 {
   font-weight: 400;
 }
@@ -109,4 +113,31 @@
 
 .socialsContainer svg:hover {
   fill: var(--secondary-accent);
+}
+
+@media screen and (max-width: 680px) {
+  .footerContainer .top {
+    flex-direction: column;
+    gap: 65px;
+    margin-bottom: 40px;
+  }
+  .top::after {
+    top: 56px;
+  }
+  .top ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bottom {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .bottom .text {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .socialsContainer {
+    justify-content: center;
+  }
 }
