@@ -1,11 +1,11 @@
 import { Jost } from "next/font/google";
 import Image from "next/image";
 import styles from "./layout.module.css";
-import "../globals.css";
-import Header from "../components/Header";
-import Footer from "../components/Footer/Footer";
+import "../../globals.css";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer/Footer";
 
-import bg_pattern_leaf from "../../../public/shared/desktop/bg-pattern-leaf.svg";
+import bg_pattern_leaf from "../../../../public/shared/desktop/bg-pattern-leaf.svg";
 
 const jost = Jost({
   variable: "--font-jost",
