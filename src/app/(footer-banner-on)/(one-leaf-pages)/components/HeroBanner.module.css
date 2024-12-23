@@ -4,6 +4,8 @@
   text-align: center;
   padding-block: 64px;
   border-radius: var(--border-radius);
+
+  margin-bottom: 160px;
 }
 
 .heroBannerContainer h1 {
