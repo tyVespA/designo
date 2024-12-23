@@ -57,25 +57,10 @@ export default function Home() {
 
       <section className={styles.linksCardsSection}>
         <div className={styles.item1}>
-          <LinkCard
-            href="/web-design"
-            title="Web design"
-            imageSrc={image_web_design_desktop}
-            alt="un laptop"
-          />
+          <LinkCard title="web design" />
         </div>
-        <LinkCard
-          href="/app-design"
-          title="App design"
-          imageSrc={image_app_design_desktop}
-          alt="uno smartphone"
-        />
-        <LinkCard
-          href="/graphic-design"
-          title="Graphic design"
-          imageSrc={image_graphic_design_desktop}
-          alt=""
-        />
+        <LinkCard title="app design" />
+        <LinkCard title="graphic design" />
       </section>
 
       <section className={styles.featuresSection}>

@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import HeroBanner from "@/app/(footer-banner-on)/(one-leaf-pages)/components/HeroBanner";
 import DesignLinksSection from "../components/DesignLinksSection";
+import LinkCard from "@/app/components/LinkCard";
 
 import image_express from "../../../../../public/web-design/desktop/image-express.jpg";
 import image_transfer from "../../../../../public/web-design/desktop/image-transfer.jpg";
@@ -8,6 +9,8 @@ import image_photon from "../../../../../public/web-design/desktop/image-photon.
 import image_builder from "../../../../../public/web-design/desktop/image-builder.jpg";
 import image_blogr from "../../../../../public/web-design/desktop/image-blogr.jpg";
 import image_camp from "../../../../../public/web-design/desktop/image-camp.jpg";
+
+import app_design from "../../../../../public/home/desktop/image-app-design.jpg";
 
 export default function page() {
   const examplesData = [
@@ -55,6 +58,10 @@ export default function page() {
         che offrono esperienze di brand memorabili.
       </HeroBanner>
       <DesignLinksSection examplesData={examplesData} />
+
+      <section>
+        <LinkCard title="app design"></LinkCard>
+      </section>
     </div>
   );
 }
