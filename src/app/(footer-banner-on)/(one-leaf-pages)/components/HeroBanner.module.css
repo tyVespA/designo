@@ -6,23 +6,49 @@
   border-radius: var(--border-radius);
 
   margin-bottom: 160px;
+  position: relative;
+  overflow: hidden;
   /* 120px for tablets */
   /* 96px for phones */
 }
 
+.bgImage {
+  position: absolute;
+  top: -50%;
+  right: 0;
+  animation: float 15s ease-in-out infinite;
+  z-index: 1;
+  min-width: 876px;
+  min-height: 584px;
+}
+
 .heroBannerContainer h1 {
+  position: relative;
+  z-index: 2;
   padding-bottom: 24px;
 }
 
 .heroBannerContainer p {
+  position: relative;
+  z-index: 2;
   max-width: 50ch;
   margin-inline: auto;
+}
+
+@media screen and (max-width: 810px) {
+  .heroBannerContainer {
+    margin-bottom: 120px;
+  }
 }
 
 @media screen and (max-width: 675px) {
   .heroBannerContainer {
     margin-inline: -40px;
-    border-radius: 0;
+    margin-bottom: 96px;
     padding-block: 105px;
+    border-radius: 0;
+  }
+  .heroBannerContainer p {
+    padding-inline: 24px;
   }
 }
