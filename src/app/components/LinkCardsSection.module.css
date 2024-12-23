@@ -1,0 +1,25 @@
+.linksCardsSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-rows: 308px;
+  gap: 25px;
+
+  margin-bottom: 160px;
+}
+
+@media screen and (max-width: 770px) {
+  .linksCardsSection {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 200px);
+
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .linksCardsSection {
+    grid-template-rows: 250px 250px;
+    margin-bottom: 96px;
+  }
+}

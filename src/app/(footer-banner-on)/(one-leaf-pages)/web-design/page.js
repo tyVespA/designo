@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import HeroBanner from "@/app/(footer-banner-on)/(one-leaf-pages)/components/HeroBanner";
 import DesignLinksSection from "../components/DesignLinksSection";
+import LinkCardsSection from "@/app/components/LinkCardsSection";
 import LinkCard from "@/app/components/LinkCard";
 
 import image_express from "../../../../../public/web-design/desktop/image-express.jpg";
@@ -57,11 +58,10 @@ export default function page() {
         Creiamo siti web che funzionano come potenti strumenti di marketing e
         che offrono esperienze di brand memorabili.
       </HeroBanner>
+
       <DesignLinksSection examplesData={examplesData} />
 
-      <section>
-        <LinkCard title="app design"></LinkCard>
-      </section>
+      <LinkCardsSection title1="app design" title2="web design" />
     </div>
   );
 }
