@@ -6,6 +6,8 @@
   border-radius: var(--border-radius);
 
   margin-bottom: 160px;
+  /* 120px for tablets */
+  /* 96px for phones */
 }
 
 .heroBannerContainer h1 {

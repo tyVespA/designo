@@ -1,6 +1,25 @@
 .designLinkCardContainer {
   background-color: #fdf3f0;
   border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+
+  max-width: 350px;
+}
+
+.designLinkCardContainer:hover {
+  background-color: var(--primary-accent);
+  color: var(--primary-light);
+  transform: translateY(-10px);
+}
+
+.designLinkCardContainer:hover h3 {
+  color: var(--primary-light);
+}
+
+.image {
+  width: 100%;
+  height: auto;
 }
 
 .textContainer {
@@ -12,4 +31,5 @@
 .designLinkCardContainer h3 {
   color: var(--primary-accent);
   padding-bottom: 16px;
+  transition: color 0.2s ease-in-out;
 }
