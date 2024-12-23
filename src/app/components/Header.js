@@ -35,13 +35,13 @@ export default function Header() {
       <nav className={openMenu ? styles.slided_in : styles.slided_out}>
         <ul>
           <li onClick={() => setOpenMenu(false)}>
-            <Link href="/about">Chi siamo</Link>
+            <Link href="/chi-siamo">Chi siamo</Link>
           </li>
           <li onClick={() => setOpenMenu(false)}>
-            <Link href="/about">Dove siamo</Link>
+            <Link href="/dove-siamo">Dove siamo</Link>
           </li>
           <li onClick={() => setOpenMenu(false)}>
-            <Link href="/about">Contatti</Link>
+            <Link href="/contatti">Contatti</Link>
           </li>
         </ul>
       </nav>
