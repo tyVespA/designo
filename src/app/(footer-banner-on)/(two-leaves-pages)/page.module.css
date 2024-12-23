@@ -144,7 +144,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  /* change in media queries */
   grid-template-rows: 308px 308px;
   gap: 25px;
 

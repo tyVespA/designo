@@ -2,7 +2,6 @@ import styles from "./page.module.css";
 import HeroBanner from "@/app/(footer-banner-on)/(one-leaf-pages)/components/HeroBanner";
 import DesignLinksSection from "../components/DesignLinksSection";
 import LinkCardsSection from "@/app/components/LinkCardsSection";
-import LinkCard from "@/app/components/LinkCard";
 
 import image_express from "../../../../../public/web-design/desktop/image-express.jpg";
 import image_transfer from "../../../../../public/web-design/desktop/image-transfer.jpg";
@@ -61,7 +60,7 @@ export default function page() {
 
       <DesignLinksSection examplesData={examplesData} />
 
-      <LinkCardsSection title1="app design" title2="web design" />
+      <LinkCardsSection title1="app design" title2="graphic design" />
     </div>
   );
 }
