@@ -1,13 +1,15 @@
+import Image from "next/image";
+import Link from "next/link";
 import styles from "./DesignLinkCard.module.css";
 
-export default function DesignLinkCard({ imgName, title, children }) {
+export default function DesignLinkCard({ imgName, alt, title, text }) {
   return (
-    <div className={styles.designLinkCardContainer}>
-      {/* image */}
+    <Link href="#" className={styles.designLinkCardContainer}>
+      <Image src={imgName} alt={alt} className={styles.image} />
       <div className={styles.textContainer}>
         <h3>{title}</h3>
-        <p>{children}</p>
+        <p>{text}</p>
       </div>
-    </div>
+    </Link>
   );
 }
