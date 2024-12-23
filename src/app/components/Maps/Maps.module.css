@@ -1,0 +1,5 @@
+.map {
+  width: 350px;
+  height: 326px;
+  border-radius: var(--border-radius);
+}
