@@ -33,3 +33,23 @@
   padding-bottom: 16px;
   transition: color 0.2s ease-in-out;
 }
+
+@media screen and (max-width: 810px) {
+  .designLinkCardContainer {
+    max-width: 100%;
+
+    display: flex;
+  }
+  .textContainer {
+    margin-block: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .designLinkCardContainer {
+    display: block;
+  }
+  .textContainer {
+    padding-inline: 28px;
+  }
+}

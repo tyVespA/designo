@@ -1,5 +1,14 @@
 .designLinksSection {
   display: flex;
+  justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+
+  margin-bottom: 160px;
+}
+
+@media screen and (max-width: 810px) {
+  .designLinksSection {
+    gap: 32px;
+  }
 }
