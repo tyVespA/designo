@@ -46,3 +46,5 @@ change images in linksCardsSection using picture
 fix sections bottom-margins on mobiles
 links card section should be its own component
 footer logo bugged (?)
+
+set a fixed height for maps so no content shift during load
