@@ -41,10 +41,15 @@ multiple layouts
 conditional styles
 
 todo:
-remove leafs in mobiles
 change images in linksCardsSection using picture
 fix sections bottom-margins on mobiles
-links card section should be its own component
-footer logo bugged (?)
+
+Footer:
+create function to calculate margin-top and padding-top values depending on if banner is showing or not and an increased margin top for narrower mobiles (378- px)
 
 set a fixed height for maps so no content shift during load
+
+done:
+remove leafs in mobiles
+footer logo bugged (?)
+links card section should be its own component
