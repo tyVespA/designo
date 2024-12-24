@@ -1,0 +1,7 @@
+.locationsSection {
+  margin-bottom: 160px;
+  padding-inline: 74px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
