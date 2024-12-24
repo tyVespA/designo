@@ -1,0 +1,39 @@
+.infoBoxContainer {
+  background-color: #fdf3f0;
+  border-radius: var(--border-radius);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  margin-bottom: 160px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.bgImage {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-25%);
+  min-height: 584px;
+  min-width: 584px;
+}
+
+.textContainer h2 {
+  color: var(--primary-accent);
+  margin-bottom: 24px;
+}
+
+.textContainer {
+  /* padding-block: 150px; */
+  margin-block: auto;
+  padding-inline: 95px;
+  position: relative;
+}
+
+.image {
+  position: relative;
+  z-index: 10;
+}
