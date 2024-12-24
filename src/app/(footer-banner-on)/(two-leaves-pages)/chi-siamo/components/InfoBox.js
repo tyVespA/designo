@@ -4,7 +4,9 @@ import Image from "next/image";
 import bg_pattern_three_circle from "../../../../../../public/shared/desktop/bg-pattern-three-circles.svg";
 
 export default function InfoBox({
-  imgName,
+  imgDesktop,
+  imgTablet,
+  imgMobile,
   alt,
   title,
   children,
@@ -21,7 +23,14 @@ export default function InfoBox({
         <h2>{title}</h2>
         <p>{children}</p>
       </div>
-      <Image src={imgName} alt={alt} className={styles.image} />
+      <div className={styles.pictureContainer}>
+        <picture>
+          <source media="(min-width: 1095px)" srcSet={imgDesktop.src} />
+          <source media="(min-width: 500px)" srcSet={imgTablet.src} />
+          <source media="(max-width: 500px)" srcSet={imgMobile.src} />
+          <img src={imgDesktop.src} alt={alt} className={styles.image} />
+        </picture>
+      </div>
     </div>
   );
 }

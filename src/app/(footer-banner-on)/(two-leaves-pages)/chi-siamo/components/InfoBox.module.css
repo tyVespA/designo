@@ -27,13 +27,46 @@
 }
 
 .textContainer {
-  /* padding-block: 150px; */
+  padding-block: 70px;
   margin-block: auto;
   padding-inline: 95px;
   position: relative;
 }
 
-.image {
-  position: relative;
-  z-index: 10;
+.pictureContainer {
+  min-width: 476px;
+  height: 640px;
+}
+
+.pictureContainer picture,
+.pictureContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1095px) {
+  .infoBoxContainer {
+    flex-direction: column-reverse;
+  }
+  .textContainer {
+    padding-inline: 59px;
+    padding-block: 68px;
+  }
+  .pictureContainer {
+    min-width: 100%;
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .infoBoxContainer {
+    margin-inline: -40px;
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+  .textContainer {
+    padding-inline: 24px;
+    padding-block: 80px;
+  }
 }
