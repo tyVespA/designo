@@ -4,8 +4,13 @@ import Banner from "./components/Banner";
 import InfoBox from "./components/InfoBox";
 import LocationsSection from "@/app/components/Locations/LocationsSection";
 
-import image_world_class from "../../../../../public/about/desktop/image-world-class-talent.jpg";
-import image_real_deal from "../../../../../public/about/desktop/image-real-deal.jpg";
+import image_world_class_talent_desktop from "../../../../../public/about/desktop/image-world-class-talent.jpg";
+import image_world_class_talent_tablet from "../../../../../public/about/tablet/image-world-class-talent.jpg";
+import image_world_class_talent_mobile from "../../../../../public/about/mobile/image-world-class-talent.jpg";
+
+import image_real_deal_desktop from "../../../../../public/about/desktop/image-real-deal.jpg";
+import image_real_deal_tablet from "../../../../../public/about/tablet/image-real-deal.jpg";
+import image_real_deal_mobile from "../../../../../public/about/mobile/image-real-deal.jpg";
 
 export default function page() {
   return (
@@ -16,7 +21,9 @@ export default function page() {
       <section>
         <InfoBox
           title="Talento di livello mondiale"
-          imgName={image_world_class}
+          imgDesktop={image_world_class_talent_desktop}
+          imgTablet={image_world_class_talent_tablet}
+          imgMobile={image_world_class_talent_mobile}
           alt="donna che osserva un progetto"
           reverse="yes"
         >
@@ -36,8 +43,10 @@ export default function page() {
       <section>
         <InfoBox
           title="Il meglio del settore"
-          imgName={image_real_deal}
-          alt="donna che osserva un progetto"
+          imgDesktop={image_real_deal_desktop}
+          imgTablet={image_real_deal_tablet}
+          imgMobile={image_real_deal_mobile}
+          alt="donna che lavora a un progetto"
         >
           Come partner strategici delle attività dei nostri clienti, siamo
           pronti ad affrontare qualsiasi sfida come se fosse nostra. Risolvere
