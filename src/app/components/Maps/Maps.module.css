@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 1110px) {
   .map {
-    height: 331px;
+    min-height: 331px;
   }
 }
 

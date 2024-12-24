@@ -10,6 +10,7 @@ export default function ContattaciBanner() {
         src={bg_pattern_hero_deskop}
         alt=""
         className={styles.bg_pattern_hero_deskop}
+        priority
       />
       <div className={styles.textSection}>
         <h1>Contattaci</h1>

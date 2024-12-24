@@ -15,6 +15,7 @@ export default function Banner() {
           src={bg_pattern_hero_desktop}
           alt=""
           className={styles.bg_pattern_hero_desktop}
+          priority={true}
         />
         <h1>Chi Siamo</h1>
         <p>
@@ -40,8 +41,8 @@ export default function Banner() {
             srcSet={image_about_hero_mobile.src}
             media="(max-width: 500px)"
           />
-          <img
-            src={image_about_hero_mobile.src}
+          <Image
+            src={image_about_hero_desktop}
             alt="Un team che collabora"
             className={styles.heroImage}
           />

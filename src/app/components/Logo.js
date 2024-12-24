@@ -16,6 +16,7 @@ export default function Logo({ src }) {
         height={24}
         width={167}
         className={styles.text}
+        priority={true}
       />
     </Link>
   );

@@ -42,6 +42,7 @@ conditional styles
 
 todo:
 change images in linksCardsSection using picture
+slow loading in picture tags, how to fix?
 fix sections bottom-margins on mobiles
 
 Footer:
