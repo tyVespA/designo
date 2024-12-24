@@ -1,0 +1,27 @@
+.bannerContainer {
+  background-color: var(--primary-accent);
+  color: var(--primary-light);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+
+  display: flex;
+  margin-bottom: 160px;
+}
+
+.textContainer {
+  padding-block: 120px;
+  padding-inline: 95px;
+  position: relative;
+}
+
+.bg_pattern_hero_desktop {
+  position: absolute;
+  min-width: 640px;
+  min-height: 640px;
+  bottom: 0;
+  right: 0;
+}
+
+.textContainer h1 {
+  margin-bottom: 32px;
+}
