@@ -78,6 +78,7 @@ export default function Home() {
           imageSrc={illustration_resourceful}
           alt="persona che disegna"
           title={"Versatili"}
+          bgRotation={250}
         >
           Tutto ciò che facciamo ha un obiettivo strategico. Adottiamo un
           approccio agile in ogni progetto e diamo valore alla collaborazione
@@ -88,6 +89,7 @@ export default function Home() {
           imageSrc={illustration_friendly}
           alt="persone che sorridono"
           title={"Amichevoli"}
+          bgRotation={90}
         >
           Siamo un team entusiasta che mette le persone al primo posto. Il
           nostro successo dipende dai clienti, e ci impegniamo a offrire loro la
