@@ -1,0 +1,22 @@
+.locationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 202px; */
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.bg_pattern_small_circle {
+  position: absolute;
+  z-index: -1;
+}
+
+.locationContainer button {
+  align-self: center;
+}
