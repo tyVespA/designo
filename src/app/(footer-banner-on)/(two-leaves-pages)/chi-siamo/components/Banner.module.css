@@ -67,6 +67,7 @@
   .bannerContainer {
     margin-inline: -40px;
     border-radius: 0;
+    margin-bottom: 0;
   }
   .textContainer {
     padding-block: 80px;

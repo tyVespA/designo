@@ -48,6 +48,7 @@
 @media screen and (max-width: 1095px) {
   .infoBoxContainer {
     flex-direction: column-reverse;
+    margin-bottom: 120px;
   }
   .textContainer {
     padding-inline: 59px;
