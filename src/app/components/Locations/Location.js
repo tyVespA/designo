@@ -18,7 +18,9 @@ export default function Location({ imgName, alt, bgRotation, title, href }) {
         <Image src={imgName} alt={alt} />
       </div>
       <h3>{title}</h3>
-      <Button theme="dark">Vedi posizione</Button>
+      <Link href={href}>
+        <Button theme="dark">Vedi posizione</Button>
+      </Link>
     </div>
   );
 }

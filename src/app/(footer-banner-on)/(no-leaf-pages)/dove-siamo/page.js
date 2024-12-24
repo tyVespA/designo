@@ -15,7 +15,7 @@ const Map2 = dynamic(() => import("../../../components/Maps/Map2"), {
 export default function page() {
   return (
     <section className={styles.locationsContainer}>
-      <div className={styles.locationContainer}>
+      <div className={styles.locationContainer} id="canada">
         <div className={styles.textContainer}>
           <Image src={bg_two_circles} alt="" className={styles.bg_image} />
           <h2>Milano</h2>
@@ -39,10 +39,15 @@ export default function page() {
             </div>
           </div>
         </div>
-        <Map1 />
+        <div className={styles.mapContainer}>
+          <Map1 />
+        </div>
       </div>
 
-      <div className={`${styles.locationContainer} ${styles.reverse}`}>
+      <div
+        className={`${styles.locationContainer} ${styles.reverse}`}
+        id="australia"
+      >
         <div className={styles.textContainer}>
           <Image src={bg_two_circles} alt="" className={styles.bg_image} />
           <h2>Firenze</h2>
@@ -66,10 +71,12 @@ export default function page() {
             </div>
           </div>
         </div>
-        <Map2 />
+        <div className={styles.mapContainer}>
+          <Map2 />
+        </div>
       </div>
 
-      <div className={styles.locationContainer}>
+      <div className={styles.locationContainer} id="regno-unito">
         <div className={styles.textContainer}>
           <Image src={bg_two_circles} alt="" className={styles.bg_image} />
           <h2>Roma</h2>
@@ -93,7 +100,9 @@ export default function page() {
             </div>
           </div>
         </div>
-        <Map1 />
+        <div className={styles.mapContainer}>
+          <Map1 />
+        </div>
       </div>
     </section>
   );
