@@ -2,8 +2,10 @@ import styles from "./Banner.module.css";
 import Image from "next/image";
 
 import image_about_hero_desktop from "../../../../../../public/about/desktop/image-about-hero.jpg";
+import image_about_hero_tablet from "../../../../../../public/about/tablet/image-about-hero.jpg";
+import image_about_hero_mobile from "../../../../../../public/about/mobile/image-about-hero.jpg";
+
 import bg_pattern_hero_desktop from "../../../../../../public/about/desktop/bg-pattern-hero-about-desktop.svg";
-import bg_pattern_hero_mobile from "../../../../../../public/about/mobile/bg-pattern-hero-about-mobile.svg";
 
 export default function Banner() {
   return (
@@ -24,7 +26,27 @@ export default function Banner() {
           nostri clienti.
         </p>
       </div>
-      <Image src={image_about_hero_desktop} alt="un team che collabora" />
+      <div className={styles.pictureContainer}>
+        <picture>
+          <source
+            srcSet={image_about_hero_desktop.src}
+            media="(min-width: 1190px)"
+          />
+          <source
+            srcSet={image_about_hero_tablet.src}
+            media="(min-width: 501px)"
+          />
+          <source
+            srcSet={image_about_hero_mobile.src}
+            media="(max-width: 500px)"
+          />
+          <img
+            src={image_about_hero_mobile.src}
+            alt="Un team che collabora"
+            className={styles.heroImage}
+          />
+        </picture>
+      </div>
     </div>
   );
 }
