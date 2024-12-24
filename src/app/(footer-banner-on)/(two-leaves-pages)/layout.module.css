@@ -13,4 +13,9 @@
   z-index: -1;
 }
 
-/* add queries to remove bgs in smaller screens */
+@media screen and (max-width: 1100px) {
+  .bg_pattern_leaf,
+  .bg_pattern_leaf_2 {
+    display: none;
+  }
+}
