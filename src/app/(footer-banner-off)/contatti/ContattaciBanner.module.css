@@ -1,0 +1,35 @@
+.contattaciContainer {
+  background-color: var(--primary-accent);
+  color: var(--primary-light);
+  border-radius: var(--border-radius);
+  padding-inline: 95px;
+  padding-block: 55px;
+
+  display: flex;
+  gap: 95px;
+
+  position: relative;
+  margin-bottom: 160px;
+}
+
+.bg_pattern_hero_deskop {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  animation: float 15s ease-in-out infinite;
+  height: auto;
+}
+
+.textSection {
+  position: relative;
+  z-index: 5;
+}
+
+.contattaciContainer h1 {
+  padding-bottom: 32px;
+}
+
+.formSection {
+  min-width: 380px;
+}
