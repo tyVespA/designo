@@ -84,7 +84,7 @@
 
 .text {
   opacity: 50%;
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -139,5 +139,11 @@
   }
   .socialsContainer {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .footerContainer {
+    margin-top: 1000px;
   }
 }

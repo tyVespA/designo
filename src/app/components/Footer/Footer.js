@@ -5,11 +5,11 @@ import Logo from "../Logo";
 
 import designo_light from "../../../../public/designo-light.svg";
 
-// add prop with default value of yes, when its no: hide banner
+// create function to calculate margin-top and padding-top values depending on if banner is showing or not and an increased margin top for narrower mobiles when banner yes (378- px)
 
 export default function Footer({ showBanner = "yes" }) {
   // custom values depending if banner is showing or not
-  const marginTopValue = showBanner === "yes" ? "360px" : "160px";
+  const marginTopValue = showBanner === "yes" ? "360px" : "0";
   const paddingTopValue = showBanner === "yes" ? "144px" : "72px";
   return (
     <div
@@ -43,9 +43,9 @@ export default function Footer({ showBanner = "yes" }) {
               <p className={styles.text400}>Toronto, Ontario M9C 3J5</p>
             </div>
             <div className={styles.text2}>
-              <p>Contattaci (Central Office)</p>
-              <p>P : +1 253-863-8967</p>
-              <p>M : contact@designo.co</p>
+              <p>Contatti (Central Office)</p>
+              <p className={styles.text400}>P : +1 253-863-8967</p>
+              <p className={styles.text400}>M : contact@designo.co</p>
             </div>
           </div>
           <div className={styles.socialsContainer}>
