@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  overflow: hidden;
 }
 
 .locationContainer {
@@ -24,10 +25,17 @@
 
 .bg_image {
   position: absolute;
+  z-index: 1;
   bottom: 0;
   left: 0;
   min-width: 584px;
   min-height: 292px;
+}
+
+.textContainer h2,
+.textContainer .addresses {
+  position: relative;
+  z-index: 2;
 }
 
 .textContainer h2 {
