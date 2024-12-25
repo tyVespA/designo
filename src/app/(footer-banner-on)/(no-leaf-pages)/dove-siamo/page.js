@@ -28,8 +28,7 @@ export default function page() {
               <p className={styles.text400}>Piazza Gae Aulenti, 3</p>
               <p className={styles.text400}>Milano, 20154</p>
               <a
-                href="https://www.google.com/maps/dir//20154+Milan,+Metropolitan+City+of+Milan/@45.4834776,9.1070156,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4786c1332e2023bd:0x6f8053a2a9184222!2m2!1d9.1894162!2d45.4835072?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
+                href="https://maps.app.goo.gl/aY4vGqShvpuPna3M8"
                 className={styles.googleLink}
               >
                 Apri con Google Maps →
@@ -60,8 +59,7 @@ export default function page() {
               <p className={styles.text400}>19 Balonne Street</p>
               <p className={styles.text400}>New South Wales 2443</p>
               <a
-                href="https://www.google.com/maps/dir//43.7139167,11.3291111/@43.7139167,11.3291111,17z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
+                href="https://maps.app.goo.gl/ypstmcDyUn241QZz9"
                 className={styles.googleLink}
               >
                 Apri con Google Maps →
@@ -89,8 +87,7 @@ export default function page() {
               <p className={styles.text400}>Bridge St, London</p>
               <p className={styles.text400}>SW1A 2JR, United Kingdom</p>
               <a
-                href="https://www.google.com/maps/dir//43.7139167,11.3291111/@43.7139167,11.3291111,17z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-                target="_blank"
+                href="https://maps.app.goo.gl/pUnXBbZEs3z5K37X7"
                 className={styles.googleLink}
               >
                 Apri con Google Maps →
