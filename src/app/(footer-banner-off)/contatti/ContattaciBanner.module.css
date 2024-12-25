@@ -44,6 +44,7 @@
   .contattaciContainer {
     flex-direction: column;
     gap: 40px;
+    padding-inline: 58px;
   }
   .bg_pattern_hero_desktop {
     bottom: auto;
@@ -59,6 +60,7 @@
   .contattaciContainer {
     margin-inline: -40px;
     border-radius: 0;
+    padding-inline: 24px;
   }
   .bg_pattern_hero_desktop {
     display: none;
