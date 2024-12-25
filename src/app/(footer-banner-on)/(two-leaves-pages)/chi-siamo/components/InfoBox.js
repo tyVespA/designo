@@ -26,8 +26,8 @@ export default function InfoBox({
       <div className={styles.pictureContainer}>
         <picture>
           <source media="(min-width: 1095px)" srcSet={imgDesktop.src} />
-          <source media="(min-width: 500px)" srcSet={imgTablet.src} />
-          <source media="(max-width: 500px)" srcSet={imgMobile.src} />
+          <source media="(min-width: 401px)" srcSet={imgTablet.src} />
+          <source media="(max-width: 400px)" srcSet={imgMobile.src} />
           <img src={imgDesktop.src} alt={alt} className={styles.image} />
         </picture>
       </div>

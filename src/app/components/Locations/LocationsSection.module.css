@@ -9,6 +9,7 @@
 @media screen and (max-width: 1025px) {
   .locationsSection {
     display: flex;
+    padding-inline: 0;
     flex-direction: column;
     gap: 80px;
   }

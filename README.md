@@ -44,6 +44,8 @@ todo:
 change images in linksCardsSection using picture
 slow loading in picture tags, how to fix?
 fix sections bottom-margins on mobiles
+add errors to form
+change border-bottom with pseudo element to avoid layout shift
 
 Footer:
 create function to calculate margin-top and padding-top values depending on if banner is showing or not and an increased margin top for narrower mobiles (378- px)

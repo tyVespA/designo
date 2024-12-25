@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./FooterBanner.module.css";
 import Button from "../Button";
 import bg_pattern from "../../../../public/shared/desktop/bg-pattern-call-to-action.svg";
@@ -19,7 +20,9 @@ export default function FooterBanner() {
           </p>
         </div>
         <div className={styles.buttonContainer}>
-          <Button theme="light">Contattaci</Button>
+          <Link href="/contatti">
+            <Button theme="light">Contattaci</Button>
+          </Link>
         </div>
       </div>
     </div>

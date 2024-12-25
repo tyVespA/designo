@@ -96,18 +96,19 @@ h1 {
   line-height: 48px;
 }
 
-@media screen and (max-width: 675px) {
-  h1 {
-    font-size: 32px;
-    line-height: 36px;
-  }
-}
-
 h2 {
   font-weight: 500;
   font-size: 40px;
   line-height: 48px;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 660px) {
+  h1,
+  h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
 
 h3 {

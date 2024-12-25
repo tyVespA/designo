@@ -10,10 +10,10 @@ export default function LocationsSection() {
     <section className={styles.locationsSection}>
       <Location
         imgName={illustration_canada}
-        title="Canada"
-        alt="illustrazione canada"
+        title="Milano"
+        alt="illustrazione Milano"
         bgRotation={90}
-        href={"/dove-siamo#canada"}
+        href={"/dove-siamo#milano"}
       />
       <Location
         imgName={illustration_australia}

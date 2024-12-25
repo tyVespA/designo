@@ -35,11 +35,11 @@ export default function Banner() {
           />
           <source
             srcSet={image_about_hero_tablet.src}
-            media="(min-width: 501px)"
+            media="(min-width: 400px)"
           />
           <source
             srcSet={image_about_hero_mobile.src}
-            media="(max-width: 500px)"
+            media="(max-width: 400px)"
           />
           <Image
             src={image_about_hero_desktop}

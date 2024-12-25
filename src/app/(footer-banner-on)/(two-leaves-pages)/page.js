@@ -36,7 +36,9 @@ export default function Home() {
             creazione di siti web completamente responsive, design di app e
             brand experience coinvolgenti. Scopri di più sui nostri servizi.
           </p>
-          <Button theme="light">Scopri di più</Button>
+          <Link href="/chi-siamo">
+            <Button theme="light">Scopri di più</Button>
+          </Link>
         </div>
         <div className={styles.imagesContainer}>
           <Image
