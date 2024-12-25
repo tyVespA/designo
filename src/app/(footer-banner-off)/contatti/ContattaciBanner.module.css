@@ -4,21 +4,27 @@
   border-radius: var(--border-radius);
   padding-inline: 95px;
   padding-block: 55px;
+  overflow: hidden;
 
   display: flex;
   gap: 95px;
 
   position: relative;
+  z-index: 1;
   margin-bottom: 160px;
 }
 
-.bg_pattern_hero_deskop {
+.bg_pattern_hero_desktop {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
   animation: float 15s ease-in-out infinite;
   height: auto;
+}
+
+.bg_pattern_hero_mobile {
+  display: none;
 }
 
 .textSection {
@@ -32,4 +38,40 @@
 
 .formSection {
   min-width: 380px;
+}
+
+@media screen and (max-width: 1073px) {
+  .contattaciContainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .bg_pattern_hero_desktop {
+    bottom: auto;
+    top: -150px;
+    left: -100px;
+  }
+  .formSection {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .contattaciContainer {
+    margin-inline: -40px;
+    border-radius: 0;
+  }
+  .bg_pattern_hero_desktop {
+    display: none;
+  }
+  .bg_pattern_hero_mobile {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    min-width: 990px;
+    height: auto;
+    object-fit: cover;
+
+    top: 0;
+    left: -50px;
+  }
 }
