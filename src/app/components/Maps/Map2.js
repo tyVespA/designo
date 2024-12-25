@@ -6,12 +6,12 @@ import { Icon } from "leaflet";
 import styles from "./Maps.module.css";
 
 export default function Map2() {
-  const position = [45.604774, 8.931727];
+  const position = [-30.329597, 149.788339];
   return (
     <MapContainer
       className={styles.map}
       center={position}
-      zoom={13}
+      zoom={15}
       scrollWheelZoom={true}
     >
       <TileLayer
@@ -22,9 +22,9 @@ export default function Map2() {
         position={position}
         icon={
           new Icon({
-            iconUrl: markerIconPng,
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
+            iconUrl: "/shared/desktop/markerIcon.png",
+            iconSize: [40, 66],
+            iconAnchor: [20, 66],
           })
         }
       ></Marker>

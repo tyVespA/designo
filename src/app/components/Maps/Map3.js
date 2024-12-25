@@ -5,8 +5,8 @@ import { Icon } from "leaflet";
 
 import styles from "./Maps.module.css";
 
-export default function Map1() {
-  const position = [45.483898, 9.189195];
+export default function Map3() {
+  const position = [51.50096, -0.1252];
   return (
     <MapContainer
       className={styles.map}
